@@ -1,37 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap");
 
 * {
-    font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
+}
+
+:root {
+  --background-color: #091320;
+  --primary-color: #691c65;
+  --secondary-color: #140d05;
+  --accent-color: #30b537;
+  --text-color: #fbfcfe;
 }
 
 .container {
-    display: flex;
-    background-color: #691C65;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
-input {
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-
-}
-
-button {
-    border-radius: 20px;
-    text-align: center;
-    border: none;
-    width: 30px;
-    height: 30px;
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
 }
 
 form {
+  background-color: var(--primary-color);
+  padding: 20px;
+  width: fit-content;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+
+button {
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.result {
+    color: var(--text-color);
     display: flex;
     gap: 20px;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
