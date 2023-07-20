@@ -1,9 +1,9 @@
 :root {
   --background-color: #050505;
-  --primary-color: #B7A4B2;
-  --secondary-color: #1D161B;
-  --accent-color: #BCA9B7;
-  --text-color: #FAFAFA;
+  --primary-color: #b7a4b2;
+  --secondary-color: #1d161b;
+  --accent-color: #bca9b7;
+  --text-color: #fafafa;
 }
 
 .body {
@@ -11,6 +11,7 @@
   padding: 30px;
   height: 100vh;
   background-image: url(bg-github-search.svg);
+  /* background by SVGBackgrounds.com */
   background-position: center;
   background-size: cover;
 }

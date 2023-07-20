@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap");
 
 * {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 :root {
   --background-color: #050505;
-  --primary-color: #B7A4B2;
-  --secondary-color: #1D161B;
-  --accent-color: #BCA9B7;
-  --text-color: #FAFAFA;
+  --primary-color: #b7a4b2;
+  --secondary-color: #1d161b;
+  --accent-color: #bca9b7;
+  --text-color: #fafafa;
 }
 
 .container {
@@ -18,6 +18,8 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  height: 100%;
+  padding: 30px;
 }
 
 img {
@@ -47,28 +49,48 @@ button {
   border-radius: 20px;
   text-align: center;
   border: none;
-  height: fit-content;
-  width: fit-content;
+  height: 40px;
+  width: 40px;
   text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+button:hover {
+  background-color: #a38d9d;
 }
 
 .user-result {
-    color: var(--text-color);
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--accent-color);
-    padding: 10px;
-    border-radius: 20px;
+  color: var(--text-color);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--accent-color);
+  padding: 18px;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: floatUp 0.5s ease-in-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .user-info {
-    background-color: var(--primary-color);
-    padding: 10px;
-    border-radius: 10px;
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 10px 20px 20px 10px;
 }
 
 .user-info > p {
-    margin: 0;
+  margin: 0;
 }
