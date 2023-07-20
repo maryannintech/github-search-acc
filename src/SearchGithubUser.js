@@ -45,7 +45,7 @@ export default function SearchGithubUser() {
               <img src={userData.avatar_url} alt="avatar of user"></img>
             </div>
             <div className="user-info">
-                <p>Name: {userData.name}</p>
+              <p>Name: {userData.name}</p>
               <p>Username: {userData.login}</p>
               <p>Bio: {userData.bio}</p>
             </div>

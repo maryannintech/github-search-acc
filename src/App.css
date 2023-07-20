@@ -12,6 +12,15 @@
   height: 100vh;
   background-image: url(bg-github-search.svg);
   /* background by SVGBackgrounds.com */
-  background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+body {
+  background-color: var(--background-color);
 }
