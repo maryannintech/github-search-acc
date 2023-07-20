@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap');
 
 * {
-  font-family: "Prompt", sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 :root {
-  --background-color: #091320;
-  --primary-color: #691c65;
-  --secondary-color: #140d05;
-  --accent-color: #30b537;
-  --text-color: #fbfcfe;
+  --background-color: #050505;
+  --primary-color: #B7A4B2;
+  --secondary-color: #1D161B;
+  --accent-color: #BCA9B7;
+  --text-color: #FAFAFA;
 }
 
 .container {
@@ -47,8 +47,9 @@ button {
   border-radius: 20px;
   text-align: center;
   border: none;
-  width: 30px;
-  height: 30px;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
 }
 
 .user-result {

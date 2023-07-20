@@ -1,13 +1,16 @@
 :root {
-  --background-color: #091320;
-  --primary-color: #691C65;
-  --secondary-color: #140D05;
-  --accent-color: #30B537;
-  --text-color: #FBFCFE;
+  --background-color: #050505;
+  --primary-color: #B7A4B2;
+  --secondary-color: #1D161B;
+  --accent-color: #BCA9B7;
+  --text-color: #FAFAFA;
 }
 
 .body {
   background-color: var(--background-color);
   padding: 30px;
   height: 100vh;
+  background-image: url(bg-github-search.svg);
+  background-position: center;
+  background-size: cover;
 }
