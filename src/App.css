@@ -24,3 +24,9 @@ h1 {
 body {
   background-color: var(--background-color);
 }
+
+@media (max-width: 425px) {
+  .body {
+    width: fit-content;
+  }
+}

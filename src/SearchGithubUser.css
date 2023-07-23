@@ -19,6 +19,7 @@
   flex-direction: column;
   gap: 20px;
   height: 80%;
+  padding: 50px;
 }
 
 img {
@@ -136,4 +137,11 @@ a {
 
 a:hover {
   color: var(--accent-color);
+}
+
+@media (max-width: 425px) {
+  .container {
+    margin: auto 0;
+    width: fit-content;
+  }
 }
