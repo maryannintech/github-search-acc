@@ -1,9 +1,7 @@
 {
   "name": "github-search-acc",
   "version": "0.1.0",
-  "repository": {
-    "url": "git+https://github.com/maryannintech/github-search-acc.git"
-  },
+  "homepage": "http://maryannintech.github.io/github-search-acc",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
