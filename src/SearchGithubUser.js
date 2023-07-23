@@ -13,12 +13,15 @@ export default function SearchGithubUser() {
 
     try {
       const response = await fetch(apiUrl);
-      if (response) {
+      if (response.status === 404) {
+        setError("User not found");
+        setUserData(null);
+      } else if (response.ok) {
         const data = await response.json();
         setUserData(data);
         setError(null);
       } else {
-        setError("User not found");
+        setError("An error occurred while fetching data");
         setUserData(null);
       }
     } catch (err) {
@@ -38,7 +41,7 @@ export default function SearchGithubUser() {
         </form>
       </div>
       <div className="result">
-        {error && <div className="error">{error}</div>}
+        {error && <div className="error"><p>{error}</p></div>}
         {userData && (
           <div className="user-result">
             <p className="user-name">@{userData.login}</p>
@@ -49,7 +52,7 @@ export default function SearchGithubUser() {
               <div className="user-info">
                 <p>{userData.name}</p>
                 <p>: {userData.bio}</p>
-                <a href={userData.html_url} rel="noopener noreferrer" target="_blank"> 🧑‍💻 Visit their GitHub page! <i class="bi bi-box-arrow-up-right"></i> </a>
+                <a href={userData.html_url} rel="noopener noreferrer" target="_blank"> 🧑‍💻 Visit their GitHub page! <i className="bi bi-box-arrow-up-right"></i> </a>
               </div>
             </div>
             <div className="user-secondrow">
