@@ -68,6 +68,7 @@ button:hover {
   opacity: 0;
   transform: translateY(50px);
   animation: floatUp 0.5s ease-in-out forwards;
+  width: 500px;
 }
 
 .user-name {
@@ -78,8 +79,21 @@ button:hover {
   padding: 5px;
 }
 
+.user-secondrow {
+  padding: 10px;
+  background-color: var(--secondary-color);
+  margin-top: 16px;
+  color: var(--text-color);
+  border-radius: 0 0 10px 10px;
+}
 
-.user-secondrow > p {
+.user-follow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-follow > p {
   margin: 0;
 }
 
@@ -87,7 +101,7 @@ button:hover {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: var(--background-color);
 }
 
@@ -103,5 +117,22 @@ button:hover {
 }
 
 .user-info > p {
+  margin-bottom: 3px;
+}
+
+hr {
+  background-color: var(--background-color);
   margin: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+a:hover {
+  color: var(--accent-color);
 }

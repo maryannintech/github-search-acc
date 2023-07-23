@@ -49,11 +49,14 @@ export default function SearchGithubUser() {
               <div className="user-info">
                 <p>{userData.name}</p>
                 <p>: {userData.bio}</p>
+                <a href={userData.html_url} rel="noopener noreferrer" target="_blank"> 🧑‍💻 Visit their GitHub page! <i class="bi bi-box-arrow-up-right"></i> </a>
               </div>
             </div>
             <div className="user-secondrow">
-              <p>Following: {userData.following}</p>
-              <p>Followers: {userData.followers}</p>
+              <div className="user-follow">
+                <p>Following: {userData.following}</p>
+                <p>Followers: {userData.followers}</p>
+              </div>
             </div>
           </div>
         )}
