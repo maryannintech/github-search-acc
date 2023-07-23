@@ -41,13 +41,19 @@ export default function SearchGithubUser() {
         {error && <div className="error">{error}</div>}
         {userData && (
           <div className="user-result">
-            <div className="user-avatar">
-              <img src={userData.avatar_url} alt="avatar of user"></img>
+            <p className="user-name">@{userData.login}</p>
+            <div className="user-firstrow">
+              <div className="user-avatar">
+                <img src={userData.avatar_url} alt="avatar of user"></img>
+              </div>
+              <div className="user-info">
+                <p>{userData.name}</p>
+                <p>: {userData.bio}</p>
+              </div>
             </div>
-            <div className="user-info">
-              <p>Name: {userData.name}</p>
-              <p>Username: {userData.login}</p>
-              <p>Bio: {userData.bio}</p>
+            <div className="user-secondrow">
+              <p>Following: {userData.following}</p>
+              <p>Followers: {userData.followers}</p>
             </div>
           </div>
         )}

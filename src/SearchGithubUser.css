@@ -24,7 +24,8 @@
 img {
   width: 100px;
   height: 100px;
-  border-radius: 20px;
+  border-radius: 50px;
+  border: solid 2px var(--secondary-color);
 }
 
 form {
@@ -60,17 +61,34 @@ button:hover {
 }
 
 .user-result {
-  color: var(--text-color);
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-between;
   background-color: var(--accent-color);
-  padding: 18px;
+  color: var(--background-color);
+  padding: 10px;
   border-radius: 20px;
   opacity: 0;
   transform: translateY(50px);
   animation: floatUp 0.5s ease-in-out forwards;
+}
+
+.user-name {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
+}
+
+
+.user-secondrow > p {
+  margin: 0;
+}
+
+.user-firstrow {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--background-color);
 }
 
 @keyframes floatUp {
@@ -82,12 +100,6 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.user-info {
-  background-color: var(--background-color);
-  padding: 15px;
-  border-radius: 10px 20px 20px 10px;
 }
 
 .user-info > p {
